@@ -1,7 +1,3 @@
-from django.core.exceptions import ImproperlyConfigured
-from datetime import datetime
-import pytz
-import json
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)

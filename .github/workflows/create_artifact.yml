@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Run jest tests
+    name: Create Artifact
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -20,6 +20,8 @@ jobs:
 
       - name: Setup Django
         run: |
+          python -m venv tmp/venv
+          source tmp/venv/bin/activate
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           python manage.py collectstatic --noinput
