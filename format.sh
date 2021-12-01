@@ -1,0 +1,1 @@
+autopep8 apps config
