@@ -3,7 +3,7 @@ name: Create Artifact
 on:
   push:
     branches:
-      - main
+      - beispiel2
 
 jobs:
   test:
@@ -28,5 +28,5 @@ jobs:
       - name: Create Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: books-django-1
+          name: books-django-2
           path: .
