@@ -28,5 +28,5 @@ jobs:
       - name: Create Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: django-backend
+          name: books-django-1
           path: .
